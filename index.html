@@ -1,136 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Books and Syllabus | Einbrainton</title>
-  <style>
-    /* Reset & Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EINBRAINTON</title>
 
-    html {
-      color: #333;
-      scroll-behavior: smooth;
-    }
+<style>
 
-    body {
-      background: #071022;
-      font-family: "Poppins", sans-serif;
-      animation: bgmove 15s ease-in-out infinite;
-      background-size: 400% 400%;
-    }
+*{
+margin:0;
+padding:0;
+text-decoration: none;
+box-sizing:border-box;
+font-family:"Montserrat", sans-serif;
+}
 
-    @keyframes bgmove {
-      0% { background-position: 0 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0 50%; }
-    }
+body{
+background:#071022;
 
-    /* Navbar */
-    .navbar {
-      background: #22c55e;
-      color: white;
-      padding: 20px 40px;
-      border-radius: 0 0 15px 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-       border-color:#22c55e;
-  box-shadow: 0 0 10px #22c55e ;
-    }
+}
 
-    .logo {
-      font-size: 35px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+header{
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+}
+.search-box{
+text-align:center;
+padding:20px;
+background:rgb(142, 223, 149);
+}
+
+.search-box input{
+width:60%;
+max-width:500px;
+padding:12px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.search-box button{
+padding:12px 20px;
+font-size:16px;
+border:none;
+background:#111;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+.search-box button:hover{
+background:#444;
+}
+nav{
+background:#22c55e;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a{
+color:white;
+padding:15px 20px;
+text-decoration:none;
+display:block;
+}
+
+nav a:hover{
+background:#444;
+}
+
+.container{
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1c283b;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px #22c55e  ;
+text-align:center;
+transition:0.3s;
+font-weight:bold;
+}
+
+.card:hover{
+transform:scale(1.05);
+ background-color:#22c55e 
+}
+
+.card a{
+text-decoration:none;
+color:white;
+font-size:18px;
 
 
-    
-   
-    
+}
 
-    /* Grid Cards */
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-      padding: 20px 40px;
-    }
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
 
-    .card {
-      background:#1c283b ;
-      color:white;
-      text-align: center;
-      padding: 2em;
-      border-radius: 25px;
-      text-decoration: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      font-size: 15px;
-      box-shadow:  1px 2px 6px #22c55e ;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-       background-color:#22c55e ;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3) ;
-    }
-
-    footer {
-      text-align: center;
-      margin: 60px 0 20px;
-      color: #444;
-    }
-
-    footer a {
-      color:#2e6f40;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-  </style>
+</style>
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">EINBRAINTON</div>
-    
-  </nav>
 
-  <br>
+<header>
+EINBRAINTON 
+</header>
+<div class="search-box">
 
-  <div class="grid-container">
-    <a href="https://biohaters.com/free-honey/" class="card"><h2>Different Writers : SCIENCE</h2></a>
-    <a href="https://nctb.portal.gov.bd/site/page/565c7468-d65d-400b-98d8-d53b0a9230e6" class="card"><h2>CLASS<br> 11–12</h2></a>
-    <a href="https://ibrahim-200-c.github.io/class-9-10-books/" class="card"><h2>CLASS<br> 9–10</h2></a>
-    <a href="https://ibrahim-200-c.github.io/class-8-books/" class="card"><h2>CLASS 8</h2></a>
-    <a href="https://ibrahim-200-c.github.io/class-7-books/" class="card"><h2>CLASS 7</h2></a>
-    <a href="https://ibrahim-200-c.github.io/class-6-books/" class="card"><h2>CLASS 6</h2></a>
-    <a href="https://ibrahim-200-c.github.io/class-5-books/" class="card"><h2>CLASS 5</h2></a>
-    <a href="https://ibrahim-200-c.github.io/class-4-books/" class="card"><h2>CLASS 4</h2></a>
-    <a href="https://ibrahim-200-c.github.io/class-3-books/" class="card"><h2>CLASS 3</h2></a>
-    <a href="https://nctb.portal.gov.bd/site/page/d734a96a-b872-4150-9892-4970e7aabfc3" class="card"><h2>DAKHIL CLASS<br> 9–10</h2></a>
-    <a href="https://nctb.portal.gov.bd/site/page/c6bcf174-476e-40b1-9d26-9339f26df6c3" class="card"><h2>CLASS 9 (SSC Vocational)</h2></a>
-    <a href="https://nctb.portal.gov.bd/site/page/29150311-ffea-4722-bb42-1d2527033875" class="card"><h2>CLASS 10 (SSC Vocational)</h2></a>
-    <a href="https://nctb.gov.bd/site/notices/7ded5854-8663-4704-848d-70031dfa7eec" class="card"><h2>SSC 2026 (Corrected Syllabus & Suggestion)</h2></a>
-  </div>
+<form action="https://www.google.com/search" method="get">
 
-  <footer>
-    <p>© 2025 <a href="#">Einbrainton</a>.Designed By<font color="yellow"> Md.Ibrahim Khalil</font></p>
-  </footer>
+<input type="text" name="q" placeholder="Search on Google...">
+
+<button type="submit">Search</button>
+
+</form>
+
+</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="tel:017992108310">Contact</a>
+</nav>
+
+<div class="container">
+
+<a href="https://biohaters.com/free-honey/"> <div class="card"><font color="white">Different Writers:<br> SCIENCE</font></div></a>
+<a href="https://nctb.portal.gov.bd/site/page/565c7468-d65d-400b-98d8-d53b0a9230e6"> <div class="card"><font color="white">CLASS<BR> 11-12</font></div></a>
+<a href="https://ibrahim-200-c.github.io/class-9-10-books/"> <div class="card"><font color="white">CLASS <br> 9-10</font></div></a>
+<a href="https://ibrahim-200-c.github.io/class-8-books/"> <div class="card"><font color="white">CLASS 8</font></div></a>
+<a href="https://ibrahim-200-c.github.io/class-7-books/"> <div class="card"><font color="white">CLASS 7</font></div></a>
+<a href="https://ibrahim-200-c.github.io/class-6-books/"> <div class="card"><font color="white">CLASS 6</font></div></a>
+<a href="https://ibrahim-200-c.github.io/class-5-books/"> <div class="card"><font color="white">CLASS 5</font></div></a>
+<a href="https://ibrahim-200-c.github.io/class-4-books/"> <div class="card"><font color="white">CLASS 4 </font></div></a>
+<a href="https://ibrahim-200-c.github.io/class-3-books/"> <div class="card"><font color="white">CLASS 3</font></div></a>
+<a href="https://nctb.portal.gov.bd/site/page/d734a96a-b872-4150-9892-4970e7aabfc3"> <div class="card"><font color="white">DAKHIL CLASS <br> 9-10 </font></div></a>
+<a href="https://nctb.portal.gov.bd/site/page/c6bcf174-476e-40b1-9d26-9339f26df6c3"> <div class="card"><font color="white">CLASS 9 (Vocational)</font></div></a>
+<a href="https://nctb.portal.gov.bd/site/page/29150311-ffea-4722-bb42-1d2527033875"> <div class="card"><font color="white">CLASS 10 (Vocational)</font></div></a>
+</div>
+
+<footer>
+© 2026 EINBRAINTON | Developed by <font color="yellow "> Md. Ibrahim Khalil </font> 
+</footer>
+
 </body>
 </html>
-
-
-
-
-
-
-
